@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoumaMode</title>
+  
+
+  <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous d'ajouter votre fichier CSS -->
+</head>
+
+<body>
+  <!-- En-tête -->
+  <header>
+    <div id="container">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="images/Logo.jpg" alt="logo" width="130" height="91">
+      </a>
+
+      <!-- Navbar -->
+    
+
+      <!-- Nos catégories -->
+      <div id="collection">
+        <div id="clothing"><a href="categories.html">Nos catégories</a></div>
+        <ul>
+          <li><a href="#mode">Mode</a>
+            <ul>
+              <li><a href="#femme">Vêtements Femme</a>
+                <ul>
+                  <li><a href="#robes">Robes</a></li>
+                  <li><a href="#jilbab">Jilbab</a></li>
+                  <li><a href="#chemise">Chemise</a></li>
+                  <li><a href="#blazer">Blazer</a></li>
+                  <li><a href="#pull">Pull</a></li>
+                  <!-- Ajoutez d'autres sous-catégories de vêtements femme ici -->
+                </ul>
+              </li>
+              <li><a href="#garcons">Garçons</a>
+                <ul>
+                  <li><a href="#chaussures-garcons">Chaussures</a></li>
+                  <li><a href="#vetements-garcons">Vêtements</a></li>
+                </ul>
+              </li>
+              <li><a href="#filles">Filles</a>
+                <ul>
+                  <li><a href="#chaussures-filles">Chaussures</a></li>
+                  <li><a href="#vetements-filles">Vêtements</a></li>
+                </ul>
+              </li>
+              <li><a href="#bagagerie">Bagagerie</a>
+                <ul>
+                  <li><a href="#sac">Sac à main</a></li>
+                  <li><a href="#sac">Sac à dos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+      <!-- Section de recherche -->
+      <div class="header-search">
+        <input type="search" name="rechercher" placeholder="Rechercher..." class="input-field">
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+   
+
+  </header>
+    <!-- Section de connexion -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header tit-up">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="center">
+              <h2 id="myModalLabel">Bienvenue chez SoumaMode</h2>
+              <p class="subheading">Saisissez votre adresse e-mail ou numéro de téléphone pour vous connecter ou créer
+                un
+                compte.</p>
+            </div>
+          </div>
+          <div class="modal-body customer-box">
+            <!-- Onglets de navigation -->
+            <ul class="nav nav-tabs">
+              <li><a class="active" href="#Connecter" data-toggle="tab">Se connecter</a></li>
+              <li><a href="#Inscription" data-toggle="tab">Inscription</a></li>
+            </ul>
+            <!-- Contenu des onglets -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="Login">
+                <form  class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" id="email1" placeholder="Nom" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                        Soumettre
+                      </button>
+                      <a class="for-pwd" href="javascript:;">Mot de passe oublié?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="Inscription">
+                <h4>INFORMATIONS PERSONNELLES</h4>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" placeholder="Nom" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" placeholder="Prénom" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" id="email" placeholder="Email" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input class="form-control" id="password" placeholder="Mot de passe" type="password">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                        Enregistrer
+                      </button>
+                      <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                        Annuler</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+
+
+
+
+
+
+  <div id="mainContainer">
+
+    <h1> Vêtements Femme </h1>
+    <!-- Image avec titre -->
+
+    <div class="image-container">
+      <h2>Robes qui captivent : trouvez la parfaite pour chaque occasion</h2>
+      <img src="images/Mode/Vêtements%20Femme/Robes/r7.jpg" alt="Robe élégante">
+
+    </div>
+
+  </div>
+    <div class="containerClothing">
+      <div class="box">
+        <a href="">
+          <img src="images/Mode/Vêtements%20Femme/Robes/r2.jpg" alt="Robe élégante">
+          <div class="details">
+            <h3>Robe Femme</h3>
+            <h4>...</h4>
+            <h2>90 DT</h2>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="">
+          <img src="images/Mode/Vêtements%20Femme/Robes/r3.jpg" alt="Robe élégante">
+          <div class="details">
+            <h3>Robe Femme</h3>
+            <h4>...</h4>
+            <h2>90 DT</h2>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="">
+          <img src="images/Mode/Vêtements%20Femme/Robes/r4.jpg" alt="Robe élégante">
+          <div class="details">
+            <h3>Robe Femme</h3>
+            <h4>...</h4>
+            <h2>120 DT</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="mainContainer-filles">
+      <h1>Filles</h1>
+      <!-- Image avec titre -->
+      <div class="image-container">
+        <h2>Robes enchanteresses pour filles : pour une allure parfaite à chaque occasion.</h2>
+        <img src="images/Mode/Filles/Vêtements/Robes/IMG-20240712-WA0017.jpg" alt="Robe élégante">
+      </div>
+      <div id="containerClothing-filles">
+        <div id="box-filles-1">
+          <a href="">
+            <img src="images/Mode/Filles/Vêtements/Robes/IMG-20240712-WA0018.jpg" alt="Robe fille">
+            <div id="details-filles-1">
+              <h3>Robe Fille</h3>
+              <h4>...</h4>
+              <h2>70 DT</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContainer-bagagerie">
+      <h1>Bagagerie</h1>
+      <!-- Image avec titre -->
+      <div class="image-container">
+        <h2>Portez l'élégance à votre épaule avec nos sacs à main exquis.</h2>
+        <img src="images/Mode/Bagagerie/Sac%20à%20main/sac6.jpg" alt="Sac à main élégant">
+      </div>
+      <div id="containerClothing-bagagerie">
+        <div id="box-bagagerie-1">
+          <a href="">
+            <img src="images/Mode/Bagagerie/Sac%20à%20main/sac3.jpg" alt="Sac à main">
+            <div id="details-bagagerie-1">
+              <h3>Sac à main</h3>
+              <h4>...</h4>
+              <h2>30 DT</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- #FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="images/Logo.jpg" alt="Logo SoumaMode" width="130" height="91">
+        </a>
+        <p class="footer-text">
+          SoumaMode propose une collection complète de vêtements, chaussures, sacs et de bagagerie inspirés par les
+          tendances contemporaines.
+        </p>
+        
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Informations</p>
+        </li>
+        <li><a href="#" class="footer-link">À propos de nous</a></li>
+        <li><a href="#" class="footer-link">Modes de paiement</a></li>
+        <li><a href="#" class="footer-link">Politique de retour</a></li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Catégories</p>
+        </li>
+        <li><a href="#" class="footer-link">Sacs à main</a></li>
+        <li><a href="#" class="footer-link">Vêtements Femme</a></li>
+        <li><a href="#" class="footer-link">Chaussures</a></li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Aide & Support</p>
+        </li>
+        <li><a href="#" class="footer-link">FAQ</a></li>
+        <li><a href="#" class="footer-link">Politique de retour</a></li>
+        <li><a href="#" class="footer-link">Livraison</a></li>
+        <li><a href="#" class="footer-link">Suivi de commande</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2024 <a href="#">SoumaMode</a>. Tous droits réservés.
+      </p>
+      <ul class="footer-bottom-list">
+        <li><a href="#" class="footer-bottom-link">Politique de confidentialité</a></li>
+        <li><a href="#" class="footer-bottom-link">Conditions d'utilisation</a></li>
+        <li><a href="#" class="footer-bottom-link">Plan du site</a></li>
+      </ul>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+
+</html>
